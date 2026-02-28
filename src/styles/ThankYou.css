@@ -1,0 +1,19 @@
+.thankyou-page {
+  padding: 150px 0;
+  text-align: center;
+  background: var(--color-bg);
+}
+
+.thankyou-page h1 {
+  margin-bottom: 20px;
+}
+
+.continue-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 40px;
+  background: var(--color-gold);
+  color: var(--color-bg);
+  text-decoration: none;
+  letter-spacing: 2px;
+}

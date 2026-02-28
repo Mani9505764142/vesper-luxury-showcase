@@ -1,0 +1,30 @@
+.header {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.header__logo a {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.header__nav a {
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: var(--transition-normal);
+}
+
+.header__nav a:hover {
+  color: var(--color-accent);
+}

@@ -1,0 +1,91 @@
+.about-page {
+  background: #0a0f1c;
+  color: white;
+}
+
+/* HERO */
+.about-hero {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+  background: linear-gradient(to bottom, #0a0f1c, #05080f);
+}
+
+.about-hero-content h1 {
+  font-size: 56px;
+  line-height: 1.2;
+  margin-top: 20px;
+}
+
+.about-subtitle {
+  letter-spacing: 3px;
+  font-size: 14px;
+  color: #c6a85a;
+}
+
+/* STORY */
+.about-story {
+  padding: 120px 20px;
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.about-text p {
+  color: #a0a0a0;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* VALUES */
+.about-values {
+  padding: 100px 20px 140px;
+  background: #0d1525;
+}
+
+.about-values .about-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  text-align: center;
+}
+
+.value h3 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+
+.value p {
+  color: #a0a0a0;
+  line-height: 1.7;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  .about-hero-content h1 {
+    font-size: 36px;
+  }
+
+  .about-values .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-text p {
+    font-size: 16px;
+  }
+}

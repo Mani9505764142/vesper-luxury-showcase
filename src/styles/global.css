@@ -1,0 +1,51 @@
+:root {
+  /* Colors */
+  --color-bg: #05070a;
+  --color-surface: #0c1117;
+  --color-gold: #c6a85a;
+  --color-text-primary: #f5f2ea;
+  --color-text-secondary: #9da3ad;
+
+  /* Spacing scale */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 32px;
+  --space-lg: 64px;
+  --space-xl: 120px;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text-primary);
+  font-family: var(--font-body);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+.container {
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 64px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
+main {
+  min-height: 80vh;
+  padding-top: 140px; /* adjust if header height changes */
+}

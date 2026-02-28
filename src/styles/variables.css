@@ -1,0 +1,26 @@
+:root {
+  /* Colors */
+  --color-bg: #0E0E10;
+  --color-surface: #18181C;
+  --color-text: #F4F1EA;
+  --color-muted: #A8A5A0;
+  --color-accent: #BFA37A;
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --space-6: 64px;
+
+  /* Radius */
+  --radius-sm: 4px;
+
+  /* Transition */
+  --transition-normal: 250ms ease;
+}

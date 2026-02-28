@@ -1,0 +1,137 @@
+.footer {
+  width: 100%;
+  background: #05080f;
+  padding: 120px 60px 60px;
+  color: white;
+}
+
+/* INNER CONTENT WIDTH CONTROL */
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* BRAND */
+.footer-brand {
+  margin-bottom: 80px;
+}
+
+.footer-brand h2 {
+  font-size: 26px;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+
+.footer-brand p {
+  max-width: 450px;
+  color: #a0a0a0;
+  line-height: 1.7;
+}
+
+/* GRID — FIXED FOR 4 COLUMNS */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1.2fr;
+  gap: 60px;
+  margin-bottom: 80px;
+  align-items: start;
+}
+
+/* HEADINGS */
+.footer-grid h4 {
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+/* LINKS */
+.footer-grid a {
+  display: block;
+  margin-bottom: 12px;
+  color: #a0a0a0;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.footer-grid a:hover {
+  color: white;
+}
+
+/* FEEDBACK SECTION */
+.footer-feedback {
+  max-width: 320px;
+  justify-self: end;
+}
+
+.footer-feedback h4 {
+  margin-bottom: 15px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.feedback-input,
+.feedback-textarea {
+  width: 100%;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 10px;
+  margin-bottom: 12px;
+  color: white;
+  font-size: 13px;
+}
+
+.feedback-textarea {
+  min-height: 90px;
+  resize: none;
+}
+
+.feedback-btn {
+  background: var(--color-gold);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.feedback-btn:hover {
+  opacity: 0.85;
+}
+
+/* BOTTOM */
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.08);
+  padding-top: 30px;
+  font-size: 13px;
+  color: #777;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-feedback {
+    justify-self: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 80px 24px 40px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand p {
+    max-width: 100%;
+  }
+}
