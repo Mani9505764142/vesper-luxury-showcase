@@ -162,4 +162,4 @@ npm run preview
 
 ## Live Demo
 
-*To be added after deployment.*
+https://vesper-luxury-showcase.vercel.app/

@@ -1,5 +1,5 @@
 /* ========================================
-   HERO SECTION (IMAGE BASED - PREMIUM)
+   HERO SECTION (REFINED PREMIUM)
 ======================================== */
 
 .hero {
@@ -8,23 +8,22 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 80% center;
 }
 
-/* Dark cinematic overlay */
+/* Softer cinematic overlay */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(0, 0, 0, 0.96) 0%,
-    rgba(0, 0, 0, 0.85) 35%,
-    rgba(0, 0, 0, 0.55) 60%,
-    rgba(0, 0, 0, 0.2) 80%,
+    rgba(0, 0, 0, 0.92) 0%,
+    rgba(0, 0, 0, 0.80) 35%,
+    rgba(0, 0, 0, 0.50) 60%,
+    rgba(0, 0, 0, 0.15) 85%,
     rgba(0, 0, 0, 0) 100%
   );
   z-index: 1;
@@ -39,14 +38,16 @@
 /* Typography */
 
 .hero-subtitle {
-  font-size: 14px;
-  letter-spacing: 2px;
+  font-size: 13px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
   color: var(--color-text-secondary);
   margin-bottom: 20px;
 }
 
 .hero-title {
-  font-size: 64px;
+  font-size: 66px;
+  font-weight: 500;
   line-height: 1.1;
   margin-bottom: 24px;
 }
@@ -58,22 +59,25 @@
 .hero-description {
   font-size: 18px;
   color: var(--color-text-secondary);
-  margin-bottom: 32px;
+  margin-bottom: 36px;
   line-height: 1.7;
 }
+
+/* Refined CTA */
 
 .hero-btn {
   display: inline-block;
   background-color: var(--color-gold);
   color: #000;
-  padding: 16px 32px;
+  padding: 16px 40px;
   font-weight: 500;
+  letter-spacing: 1px;
   transition: all 250ms ease;
 }
 
 .hero-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(198, 168, 90, 0.15);
+  box-shadow: 0 8px 24px rgba(198, 168, 90, 0.18);
 }
 
 
@@ -82,14 +86,14 @@
 ======================================== */
 
 .brand-story {
-  padding: 140px 0;
+  padding: 160px 0;
   background: linear-gradient(to bottom, #0a0f1c, #0b1323);
 }
 
 .story-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 80px;
+  gap: 100px;
   align-items: center;
 }
 
@@ -110,7 +114,7 @@
 .story-lead {
   font-size: 20px;
   margin-bottom: 30px;
-  color: var(--color-text);
+  color: var(--color-text-primary);
 }
 
 .story-right p {
@@ -121,7 +125,7 @@
 
 .story-link {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 24px;
   letter-spacing: 2px;
   font-weight: 500;
   color: white;
@@ -134,32 +138,34 @@
 
 
 /* ========================================
-   FEATURED COLLECTION (PROPER FIX)
+   FEATURED COLLECTION
 ======================================== */
 
 .featured {
-  padding: 120px 0;
+  padding: 140px 0;
   background-color: var(--color-surface);
 }
 
 .section-header {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .section-header h2 {
-  font-size: 36px;
-  margin-bottom: 12px;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
 .section-header p {
   color: var(--color-text-secondary);
-  max-width: 500px;
+  max-width: 520px;
+  line-height: 1.6;
 }
 
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 60px;
+  gap: 72px;
 }
 
 /* Product Card */
@@ -167,6 +173,11 @@
 .product-card {
   display: flex;
   flex-direction: column;
+  transition: transform 250ms ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
 }
 
 .product-image {
@@ -180,11 +191,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s ease;
+  transition: transform 600ms ease;
 }
 
 .product-card:hover .product-image img {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 .product-card h3 {
@@ -195,20 +206,20 @@
 .price {
   font-size: 16px;
   color: var(--color-gold);
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 /* Premium outline button */
 
 .view-btn {
   display: inline-block;
-  padding: 14px 24px;
+  padding: 14px 28px;
   border: 1px solid var(--color-gold);
   color: var(--color-gold);
   text-transform: uppercase;
   font-size: 13px;
   letter-spacing: 1px;
-  transition: all 0.3s ease;
+  transition: all 300ms ease;
 }
 
 .view-btn:hover {
@@ -222,7 +233,7 @@
 ======================================== */
 
 .newsletter {
-  padding: 140px 0;
+  padding: 160px 0;
   background: linear-gradient(to bottom, #0b1323, #0a0f1c);
   text-align: center;
 }
@@ -252,7 +263,7 @@
 .newsletter-form {
   display: flex;
   justify-content: center;
-  gap: 16px;
+  gap: 20px;
 }
 
 .newsletter-form input {
@@ -265,7 +276,7 @@
 }
 
 .newsletter-form button {
-  padding: 14px 28px;
+  padding: 14px 32px;
   background: var(--color-gold);
   color: black;
   border: none;
@@ -298,9 +309,9 @@
 @media (max-width: 768px) {
 
   .hero {
-    background-position: center 20%;
-    background-size: 140%;
-    padding: 140px 0 100px;
+    background-position: center 25%;
+    background-size: 130%;
+    padding: 160px 0 120px;
   }
 
   .hero-content {
@@ -309,22 +320,23 @@
   }
 
   .hero-title {
-    font-size: 42px;
+    font-size: 44px;
     line-height: 1.15;
   }
 
   .hero-description {
-    font-size: 16px;
+    font-size: 17px;
+    line-height: 1.7;
   }
 
   .hero-btn {
-    width: 100%;
-    text-align: center;
+    width: auto; /* removed full width */
+    padding: 14px 32px;
   }
 
   .product-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 48px;
   }
 
   .product-image {
@@ -332,12 +344,12 @@
   }
 
   .featured {
-    padding: 80px 0;
+    padding: 100px 0;
   }
 
   .story-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 60px;
   }
 
   .story-left h2 {
